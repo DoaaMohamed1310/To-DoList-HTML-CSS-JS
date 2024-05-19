@@ -1,0 +1,95 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.to-do-list{
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.to-do-list .header-list{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.to-do-list .input-list .list-enter{
+    position: relative;
+
+}
+.to-do-list .input-list .list-enter input,.to-do-list .input-list .list-enter button{
+    border-radius: 1.5rem;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+.to-do-list .input-list .list-enter input{
+    background-color: #ededed;
+    width: 100%;
+    padding-left: 20px;
+
+}
+.to-do-list .input-list .list-enter button{
+    padding: 10px 30px;
+    background-color: #17a2b8;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.to-do-list .input-list .list-added .list-style{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    /* margin-bottom: 10px; */
+}
+.to-do-list .input-list .list-added .list-style .text{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.to-do-list .input-list .list-added .list-style .text::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border:solid 1px #ccc;
+    border-radius: 50%;
+}
+.to-do-list .input-list .list-added .list-style .text.checked{
+    text-decoration: line-through;
+}
+.to-do-list .input-list .list-added .list-style .text.checked::before{
+    content: "";
+    background-image: url(../image/download-removebg-preview\ \(2\).png);
+    background-position: center;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-color: #17a2b8;
+    text-decoration: none ;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
